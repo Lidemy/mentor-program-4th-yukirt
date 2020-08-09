@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .wrapper {
+            background-color: white;
+            max-width: 645px;
+            box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            border-top: solid 6px #fad312;
+            margin-top: 10%;
+            padding: 64px 32px;
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        input {
+            color: #afafaf;
+            border: solid 1px #afafaf;
+            margin-bottom: 20px;
+        }
+
+        input a {
+            font-size: 14px;
+        }
+
+        p {
+            font-weight: normal;
+        }
+
+        footer {
+            height: 60px;
+            background-color: #000000;
+            margin-top: 66px;
+        }
+
+        footer p {
+            padding-top: 26px;
+            text-align: center;
+            font-size: 13px;
+            color: #999999;
+        }
+
+        .button {
+            width: 92px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #fad312;
+            color: #000000;
+            border: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="wrapper">
+            <h1>新拖延運動報名表單</h1>
+            <p>活動日期：2020/12/10 ~ 2020/12/11</p>
+            <p>活動地點：台北市大安區新生南路二段1號</p>
+            <br>
+            <p style="color:red;">* 必填</p>
+            <br>
+            <h3>暱稱 <a style="color:red;">*</a></h3>
+            <input type="text" name="nickName" value="您的回答">
+            <h3>電子郵件 <a style="color:red;">*</a></h3>
+            <input type="text" name="email"" value=" 您的電子郵件">
+            <h3>手機號碼 <a style="color:red;">*</a></h3>
+            <input type="text" name="phoneNumber" value="您的手機號碼">
+            <h3>報名類型 <a style="color:red;">*</a></h3>
+            <input type="radio" name="" id=""> <a>躺在床上用想像力實作</a>
+            <br>
+            <input type="radio" name="" id=""> <a>趴在地上滑手機找現成的</a>
+            <h3>怎麼知道這個活動的？ <a style="color:red;">*</a></h3>
+            <input type="text" name="know" value="您的回答">
+            <h3>其他</h3>
+            <p>對活動的一些建議</p>
+            <input type="text" name="advice" value="您的回答">
+            <br>
+            <input class="button" type="button" value="提交">
+            <p>請勿透過表單送出您的密碼。</p>
+        </div>
+    </form>
+    <footer>
+        <p>© 2020 © Copyright. All rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
