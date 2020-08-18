@@ -195,17 +195,26 @@
     const radioError = document.querySelector(".radio__error")
     let valid = true
     btn.addEventListener('submit', function (e) {
+      let info = []
       e.preventDefault();
       console.log(radio)
       if (!(radio[1].checked || radio[0].checked)) {
         radioError.classList.remove("hide")
         valid = false
-      } 
+      }
       for (let i = 0; i < input.length - 1; i += 1) {
+        console.log(input[i])
+        info.push(
+          input[i].name + ":" + input[i].value
+        )
+        console.log(info)
         if (!input[i].value) {
           inputError[i].classList.remove("hide");
           valid = false;
         }
+      }
+      if (valid) {
+        alert(info)
       }
     })
   </script>
